@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+
+.child{
+    width:130px;
+    height: 130px;
+    border-radius: 100%;
+    background:linear-gradient(to right,red,yellow,green,yellow, red);
+    position:absolute;
+    top:10px;
+    transform: rotate(0deg);
+    animation: move 5s ease infinite backwards ;
+}
+@keyframes move {
+ 0%{
+    transform:  translat(0vw,0vh) rotate(180deg);
+ }
+    25%{
+        transform:  translate(0vw,80vh) rotate(360deg);
+    }
+ 50%{
+    transform: translate(90vw,80vh) rotate(180deg);
+ }
+75%{
+    transform:  translate(90vw,0vh) rotate(90deg);
+}
+}
+
